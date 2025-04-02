@@ -51,6 +51,14 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 
     /* Autolinking */
+
+         project.ext.vectoricons = [
+            iconFontNames:[ 'MaterialIcons.ttf', 'EvilIcons.ttf',"MaterialCommunityIcons.ttf","Ionicons.ttf","FontAwesome.ttf","AntDesign.ttf" ] 
+        ]
+
+        apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+
     autolinkLibrariesWithApp()
 }
 
@@ -101,7 +109,7 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
-            minifyEnabled enableProguardInReleaseBuilds
+            minifyEnabled true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }

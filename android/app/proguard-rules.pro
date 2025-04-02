@@ -8,3 +8,11 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+# React Native
+-keep class com.facebook.react.** { *; }
+-keep class com.facebook.hermes.** { *; }
+-keep class com.facebook.fbjni.** { *; }
+
+# Add rules for other libraries (e.g., Firebase, Google Play Services)
+# Example for react-native-vector-icons:
+-keep class com.oblador.vectoricons.** { *; }
