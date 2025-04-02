@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 100,
     gap: 2,
-    marginBottom: 20, // Adjusted marginBottom to ensure ScrollView is visible
+    marginBottom: 20, 
   },
   profileName: {
     fontWeight: 'bold',
