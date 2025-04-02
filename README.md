@@ -1,6 +1,6 @@
 
 
-# React Native Tabbed App
+# React Native App
 
 A mobile app with three tabs (Home, Profile, Settings) built with React Native and React Navigation.
 
